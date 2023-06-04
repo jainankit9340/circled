@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Circled</title>
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bgimg {
+            background-image: url('./images/bg_coming.jpg');
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            font-family: 'Cabin', sans-serif;
+            font-size: 36px;
+        }
+        .bgimg::before{
+            content: '';
+            width: 100%; height: 100%;
+            top: 0; left: 0;
+            position: absolute;
+            background: linear-gradient(27deg, rgb(2 0 36) 0%, rgb(140 82 255 / 75%) 49%);
+        }
+
+        .topleft {
+            position: absolute;
+            top: 0;
+            left: 16px;
+        }
+
+        .bottomleft {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .logo_img{
+            width: 30%;
+        }
+        @media only screen and (max-width: 1024px){
+            .logo_img{
+                width: 70%;
+            }
+        }
+
+        hr {
+            margin: auto;
+            width: 40%;
+        }
+    </style>
+    <body>
+        <div class="bgimg">
+            <div class="middle">
+                <img src="./images/logo_circled_white.png" class="logo_img">
+                <h1>COMING SOON</h1>
+                <hr>
+                <p id="demo" style="font-size:30px"></p>
+            </div>
+          </div>
+    </body>
+</html>
