@@ -1,77 +1,322 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Circled</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./img/Favicon.png">
+        <meta property="og:title" content="Circled" />
+        <meta property="og:image" content="./img/og_cr.png" />
+        <title>Circled</title>    
+
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
-
-        .bgimg {
-            background-image: url('./images/bg_coming.jpg');
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            position: relative;
-            color: white;
-            font-family: 'Cabin', sans-serif;
-            font-size: 36px;
-        }
-        .bgimg::before{
-            content: '';
-            width: 100%; height: 100%;
-            top: 0; left: 0;
-            position: absolute;
-            background: linear-gradient(27deg, rgb(2 0 36) 0%, rgb(140 82 255 / 75%) 49%);
-        }
-
-        .topleft {
-            position: absolute;
-            top: 0;
-            left: 16px;
-        }
-
-        .bottomleft {
-            position: absolute;
-            bottom: 0;
-            left: 16px;
-        }
-
-        .middle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-        .logo_img{
-            width: 30%;
-        }
-        @media only screen and (max-width: 1024px){
-            .logo_img{
-                width: 70%;
-            }
-        }
-
-        hr {
-            margin: auto;
-            width: 40%;
-        }
-    </style>
     <body>
-        <div class="bgimg">
-            <div class="middle">
-                <img src="./images/logo_circled_white.png" class="logo_img">
-                <h1>COMING SOON</h1>
-                <hr>
-                <p id="demo" style="font-size:30px"></p>
+        <header class="bg-head">
+            <div class="container">
+                <div class="row">
+                    <div class="content mod--header">
+                        <nav class="navbar navbar-expand-lg navbar-nav-scroll navbar-light thm-nav pb-2-5 pb-md-5 border-dark ">
+                            <a class="navbar-brand logo" href="#"><img src="./img/logo_circled.svg" alt=""></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse pt-2" id="navbarNav">
+                                <ul class="navbar-nav ms-auto px-md-5">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About Us</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link" href="#">Portfolio</a>
+                                    </li> -->
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="opportunity.html">Opportunities</a>
+                                    </li>
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact Us</a>
+                                    </li> -->
+                                    <li class="nav-item d-block d-md-none">
+                                        <a class="nav-link" href="https://forms.gle/NMhKJuS7hracP5Yy9" target="_blank">Get Started</a>
+                                    </li>
+                                </ul>
+                                <div class="d-none d-md-block px-5">
+                                    <a href="https://forms.gle/NMhKJuS7hracP5Yy9" target="_blank" class="link_btn"><h2>GET<br>STARTED</h2></a>
+                                </div>
+                            </div>
+                        </nav>
+                        <div style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="lines mod--header">
+                            <div class="lines__line mod--header-1 d-none d-md-block"></div>
+                            <div class="lines__line mod--header-2"></div>
+                            <div class="lines__line mod--header-3"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </header>
+        <main>
+            <section class="bg-top-head">
+                <div class="sec-py">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-7">
+                                <h1 class="first-title mb-5">Enriching Investors <span class="text-dark">and</span> Elevating Real Estate <span class="text-dark">Investments through tech...</span></h1>
+                                <a href="https://forms.gle/NMhKJuS7hracP5Yy9" target="_blank" class="btn btn-rounded btn-lg btn-dark">Get Started</a>
+                            </div>
+                            <div class="col-sm-5 p-4">
+                                <div class="d-flex">
+                                    <div class="banner-image ml-m-0 ban-1">
+                                        <div class="overlay-ban-1"></div>
+                                    </div>
+                                    <div class="banner-image ban-2">
+                                        <div class="overlay-ban-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 divider-lf">
+                    <div class="container">
+                        <div class="row">
+                            <img src="./img/divider lf.svg" class="divider-l" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 sec-py">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="d-md-flex align-items-center">
+                                    <img src="./img/pup-big.svg" class="pup-big" alt=""> 
+                                    <h2 class="title-2">Circled Approach
+                                        <span>Towards Your</span>
+                                        Investments</h2>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 pt-md-5">
+                                <p class="desc mt-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                        <div class="row pt-5 mb-5">
+                            <div class="col-sm-4">
+                                <div class="img_box mb-5 mb-md-0">
+                                    <div class="bgx">
+                                        <img src="./img/image-ban 1.png" alt="">
+                                    </div>
+                                    <p>Unlock tech-enabled real estate investments with just a few clicks.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="img_box mb-5 mb-md-0">
+                                    <div class="bgx">
+                                        <img src="./img/image-ban 2.png" alt="">
+                                    </div>
+                                    <p>Thoughtfully curated and rigorously evaluated investment opportunities that strike the perfect balance between risk and return.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="img_box mb-5 mb-md-0">
+                                    <div class="bgx">
+                                        <img src="./img/image-ban 3.png" alt="">
+                                    </div>
+                                    <p>Investments across Residential, commercial, warehousing and hospitality.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec-py">
+                <div class="container py-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-3 pe-md-5">
+                            <h2 class="title-3">How it Works?</h2>
+                        </div>
+                        <div class="col-sm-6 pe-md-5">
+                            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-sm-4 pt-5">
+                            <div class="icon-box pe-lg-6">
+                                <span class="svg-icon mb-4">
+                                    <svg height="36" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+                                    </svg>
+                                </span>
+                                <h3 class="h4">Sign Up</h3>
+                                <p>Register and complete KYC, to lorem ipsum dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pt-5">
+                            <div class="icon-box pe-lg-6">
+                                <span class="svg-icon mb-4">
+                                    <svg height="36" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+                                    </svg>
+                                </span>
+                                <h3 class="h4">Choose an Investment</h3>
+                                <p>Register and complete KYC, to lorem ipsum dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pt-5">
+                            <div class="icon-box pe-lg-6">
+                                <span class="svg-icon mb-4">
+                                    <svg height="36" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                                    </svg>
+                                </span>
+                                <h3 class="h4">Track Investments</h3>
+                                <p>Register and complete KYC, to lorem ipsum dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-sm-12 pt-3 text-center">
+                            <h5 class="mb-4">Find some great opportunities on Circled</h5>
+                            <a href="https://forms.gle/NMhKJuS7hracP5Yy9" target="_blank" class="btn btn-rounded btn-lg btn-dark-inv">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="col-sm-12 divider-lf">
+                <div class="container">
+                    <div class="row">
+                        <img src="./img/divider lf.svg" class="divider-l flip-x" alt="">
+                    </div>
+                </div>
+            </div>
+            <section class="sec-py bg-light-gray align-sec">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h3 class="title-3 mb-5">Why<br/>Circled?</h3>
+                            <img src="./img/why_c.png" class="wd-100 mb-5 mb-md-0" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="row flex-wrap">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="icon-box-2">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">                                            
+                                            <h3>Higher Returns</h3>
+                                            <img src="./img/Q1.svg" alt="">
+                                        </div>
+                                        <p class="mb-0">Higher than any other asset class.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="icon-box-2">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">                                            
+                                            <h3>Risk Managed</h3>
+                                            <img src="./img/Q2.svg" alt="">
+                                        </div>
+                                        <p class="mb-0">Checks and Balances for Each deal to ensure right investments and clear exit strategy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row flex-wrap">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="icon-box-2">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">                                            
+                                            <h3>Data Driven</h3>
+                                            <img src="./img/Q3.svg" alt="">
+                                        </div>
+                                        <p class="mb-0">Drives all your Investments.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="icon-box-2">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">                                            
+                                            <h3>Tech Enabled</h3>
+                                            <img src="./img/Q4.svg" alt="">
+                                        </div>
+                                        <p class="mb-0">Click, Invest, Track and Exit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row flex-wrap">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="icon-box-2">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">                                            
+                                            <h3>Stable Investments</h3>
+                                            <img src="./img/Q5.svg" alt="">
+                                        </div>
+                                        <p class="mb-0">Unlike Equity, MF, Crypto and Others.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-light-gray">
+            <section class="footer-b pt-5">
+                <div class="container py-5">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-7">
+                            <div class="subscription-box mb-5">
+                                <div class="sub-input">
+                                    <p>Get Started With Circled ?</p>
+                                    <input type="text" class="form-control" placeholder="Enter your email id" >
+                                </div>
+                                <div class="sub-mit">
+                                    <button class="btn-icon">
+                                        <svg width="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                        </svg>                                      
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 p-4 p-md-2">
+                            <h5 class="foot-title">About</h5>
+                            <p class="foot-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                        <div class="col-sm-4 p-4 p-md-2">
+                            <h5 class="foot-title">Sitemap</h5>
+                            <ul class="link-li">
+                                <li><a href="index.html" class="foot-p mb-0">Home</a></li>
+                                <li><a href="about.html" class="foot-p mb-0">About Us</a></li>
+                                <li><a href="opportunity.html" class="foot-p mb-0">Opportunities</a></li>
+                                <!-- <li><a href="#" class="foot-p mb-0">Portfolio</a></li>
+                                <li><a href="#" class="foot-p mb-0">Contact Us</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 p-4 p-md-2">
+                            <h5 class="foot-title">Community</h5>
+                            <ul class="link-li">
+                                <li><a href="#" target="_blank" class="foot-p mb-0">Facebook</a></li>
+                                <li><a href="#" target="_blank" class="foot-p mb-0">Linkedin</a></li>
+                                <li><a href="#" target="_blank" class="foot-p mb-0">Instagram</a></li>
+                                <li><a href="#" target="_blank" class="foot-p mb-0">Twitter</a></li>
+                                <li><a href="#" target="_blank" class="foot-p mb-0">Discord</a></li>
+                                <li><a href="#" target="_blank" class="foot-p mb-0">Youtube</a></li>
+                                <li><a href="#" target="_blank" class="foot-p mb-0">Telegram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container border-top-light">
+                    <div class="row">
+                        <div class="col-sm-12 py-3">
+                            <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center">
+                                <img src="./img/logo_circled_hz.svg" class="mb-4 mb-md-0" alt="">
+                                <p class="foot-p mb-0">© 2023 Circled. All rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
     </body>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </html>
