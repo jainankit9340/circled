@@ -450,6 +450,10 @@ a{
     margin: 0;
     padding: 0;
 }
+.link-li.link-about li{
+    
+    margin-bottom: 10px;
+}
 .link-li li{
     display: inline-block;
     min-width: 200px;
@@ -540,7 +544,30 @@ a{
     border-width: 0;
     box-shadow: 0 0.375rem 1.5rem 0 rgba(140,152,164,.125);
 }
-
+.about-box{
+    border: 1px solid #747474;
+    padding: 30px;
+    background: #fff;
+    transition: all 0.4s linear;
+}
+.about-box:hover{
+    transition: all 0.4s linear;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    scale: 1.1;
+    border: 0;
+    border-radius: 6px;
+}
+.terms{
+    margin-bottom: 40px;
+}
+.terms h6{
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.term-list.number{
+    list-style: number;
+}
 
 @media only screen and (max-width: 1024px) {
     
@@ -559,6 +586,9 @@ a{
     }
     .bg-top-head::after{
         left: 0;
+    }
+    .border-end-mob-1{
+        border-right: 1px solid #747474 !important;
     }
 }
 @media only screen and (max-width: 767px) {
