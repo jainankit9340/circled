@@ -293,6 +293,7 @@ a{
     border-radius: 10px;
     background: #222222;
     padding: 30px;
+    height: 100%;
     box-shadow: 0 10px 20px rgb(140 82 255 / 26%);
 }
 .icon-box:hover{
